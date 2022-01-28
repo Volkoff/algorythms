@@ -14,8 +14,7 @@ class Calculator:
             if difference<min:
                 min = difference
                 minresult = result
-        print("Full minimum: "+ str(min))
-        print("Combination: "  + str(minresult))
+        #print("Full minimum: "+ str(min))
 
 
     def PermuteBrute(self, source, l, r):
@@ -28,6 +27,8 @@ class Calculator:
                 source[l], source[i] = source[i], source[l]
 
 
+
+#==============================================================MONTE-CARLO===========================
     permutationList = []
 
     def get_min_diff(self,perm: list) -> list:
@@ -62,4 +63,10 @@ class Calculator:
                 combinations -= 1
         results = self.get_min_diff(perm)
         return results
+
+
+#===========================================HEURISTIC==========================================
+
+
+
 
